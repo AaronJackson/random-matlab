@@ -1,9 +1,9 @@
 This is for the mathsy-version of Wordle, Nerdle.
 https://nerdlegame.com/
 
-~wordle.m~ attempts to find all valid 8 digit equations. It took about
+~nerdle.m~ attempts to find all valid 8 digit equations. It took about
 18 hours to run in Octave. The output is included as
-~wordle_output.mat~. However, this output includes integers prefixed
+~nerdle_output.mat~. However, this output includes integers prefixed
 with zero(s), which is kind of cheating, and I don't think these are
 actually valid for Nerdle.  The script ~filter.m~ will remove those
 cases.
