@@ -1,0 +1,19 @@
+This is for the mathsy-version of Wordle, Nerdle.
+https://nerdlegame.com/
+
+~wordle.m~ attempts to find all valid 8 digit equations. It took about
+18 hours to run in Octave. The output is included as
+~wordle_output.mat~. However, this output includes integers prefixed
+with zero(s), which is kind of cheating, and I don't think these are
+actually valid for Nerdle.  The script ~filter.m~ will remove those
+cases.
+
+Despite this, I still end up with 67346 equations. 41857 of these
+resolve to zero, so if we exclude these, we end up with 25489 (these
+are stored as ~filtered_nonzero.mat~).
+
+Some other interesting stats:
+
+- The biggest number you can make is 891.
+- The number of unique answers is 456.
+- The most common answer is 9, making up 1635 of the 25489 equations.
