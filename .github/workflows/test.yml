@@ -1,5 +1,5 @@
 name: Run MATLAB Script on GitHub-Hosted Runner
-on: [push]
+on: [push, pull_request]
 jobs:
   test:
     name: Run MATLAB Script
