@@ -1,5 +1,9 @@
 clear all
 
+system('sudo apt install -y tesseract')
+system('sudo pip3 install internetarchive')
+system('./download.sh')
+
 F = dir('*.txt');
 T = {};
 
