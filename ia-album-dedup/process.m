@@ -1,8 +1,12 @@
 clear all
 
-system('sudo apt install -y tesseract')
-system('sudo pip3 install internetarchive')
-system('./download.sh')
+if ~isempty(getenv('GITHUB_ACTION'))
+    system('sudo apt install -y tesseract')
+    system('sudo pip3 install internetarchive')
+    system('./download.sh')
+end
+
+mkdir pairs
 
 F = dir('*.txt');
 T = {};

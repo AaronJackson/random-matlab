@@ -4,7 +4,7 @@
 
 #get the images of the labels (there are 350k of them, but can test with 1000)
 ia search "collection:georgeblood" --itemlist | \
-    head -n500 | \
+    head -n100 | \
     xargs -L1 -I{} -P4 \
 	  ia download {} --no-directories --format="Item Image"
 
