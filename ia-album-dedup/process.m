@@ -1,7 +1,7 @@
 clear all
 
 if ~isempty(getenv('GITHUB_ACTION'))
-    system('sudo apt install -y tesseract-ocr')
+    system('sudo apt install -y libjpeg tesseract-ocr')
     system('sudo pip3 install internetarchive')
     system('./download.sh')
 end
