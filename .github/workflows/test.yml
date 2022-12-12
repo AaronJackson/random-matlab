@@ -21,3 +21,6 @@ jobs:
             cmd: bitfield
           - dir: modulation/qam
             cmd: test
+          - dir: ia-album-dedup
+            cmd: process
+
